@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/edit_note_title"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/primary_900"
+        android:backgroundTint="@color/primary"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/edit_note_content"
+        android:hint="Your note..."
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/secondary_700"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primary_light"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:minLines="8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btn_cancel_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/secondary"/>
+        <Button
+            android:id="@+id/btn_save_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/fab_fg"
+            android:backgroundTint="@color/primary"/>
+    </LinearLayout>
+</LinearLayout>
